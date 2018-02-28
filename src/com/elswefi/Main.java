@@ -1,5 +1,7 @@
 package com.elswefi;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -12,5 +14,9 @@ public class Main {
         info.add(new Information("Nour", "Omar", 30));
 
         System.out.print(info);
+        Serialize serialize = new Serialize();
+        serialize.Serialize(info,"src/com/elswefi/info.ser");
+        System.out.print("\n done !");
+
     }
 }

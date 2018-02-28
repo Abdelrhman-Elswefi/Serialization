@@ -14,8 +14,8 @@ public class Main {
         info.add(new Information("Nour", "Omar", 30));
 
         System.out.print(info);
-        Serialize serialize = new Serialize();
-        serialize.Serialize(info,"src/com/elswefi/info.ser");
+        SerializationDemo demo = new SerializationDemo();
+        demo.Serialize(info,"src/com/elswefi/info.ser");
         System.out.print("\n done !");
 
     }

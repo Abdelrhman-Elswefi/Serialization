@@ -16,7 +16,9 @@ public class Main {
         System.out.print(info);
         SerializationDemo demo = new SerializationDemo();
         demo.Serialize(info,"src/com/elswefi/info.ser");
-        System.out.print("\n done !");
+        System.out.print("\nSerialization done !");
+        List<Information> newlist = demo.deSerialze("src/com/elswefi/info.ser");
+        System.out.printf("\n the new list is :%s",newlist);
 
     }
 }
